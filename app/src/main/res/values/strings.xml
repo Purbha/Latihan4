@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Latihan4</string>
+    <string name="textView_Main_Judul">Masukan Pesan</string>
+    <string name="button_Main_Submit">Submit</string>
 </resources>

@@ -10,11 +10,11 @@
         android:id="@+id/textView_Main_Judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Masukan Pesan"
+        android:text="@string/textView_Main_Judul"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circleImageView_Main_Banner" />
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:text="Submit"
+        android:text="@string/button_Main_Submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Main_Judul" />
 
@@ -49,6 +49,7 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="text"
+        android:autofillHints=""
         app:layout_constraintEnd_toStartOf="@+id/button_Main_Submit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Main_Judul" />
