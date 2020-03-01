@@ -1,7 +1,7 @@
 package com.ims_hr.latihan4;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Inisial() {
-        B_Submit = (Button) findViewById(R.id.button_Main_Submit);
-        E_Pesan = (EditText) findViewById(R.id.editText_Main_Pesan);
+        B_Submit = findViewById(R.id.button_Main_Submit);
+        E_Pesan = findViewById(R.id.editText_Main_Pesan);
     }
 
     private void Listen_B_Submit() {
