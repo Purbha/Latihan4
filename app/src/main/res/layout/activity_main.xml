@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView_Main_Banner"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView_Main_Judul"
         android:layout_width="wrap_content"
@@ -18,18 +31,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circleImageView_Main_Banner" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView_Main_Banner"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+    <EditText
+        android:id="@+id/editText_Main_Pesan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/banner"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="@color/colorAccent"
+        android:autofillHints="@string/textView_Main_Judul"
+        android:ems="10"
+        android:hint="@string/editText_Main_Pesan"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_Main_Submit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_Main_Judul" />
 
     <Button
         android:id="@+id/button_Main_Submit"
@@ -39,22 +56,6 @@
         android:layout_marginEnd="16dp"
         android:text="@string/button_Main_Submit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_Main_Judul" />
-
-    <EditText
-        android:id="@+id/editText_Main_Pesan"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:autofillHints="@string/textView_Main_Judul"
-        android:ems="10"
-        android:hint="@string/textView_Main_Judul"
-        android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_Main_Submit"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Main_Judul" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

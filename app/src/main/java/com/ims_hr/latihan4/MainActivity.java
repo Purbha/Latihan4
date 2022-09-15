@@ -1,7 +1,6 @@
 package com.ims_hr.latihan4;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -27,12 +26,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Listen_B_Submit() {
-        B_Submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String Pesan = E_Pesan.getText().toString();
-                Toast.makeText(MainActivity.this, Pesan, Toast.LENGTH_SHORT).show();
-            }
+        B_Submit.setOnClickListener(v -> {
+            String Pesan = E_Pesan.getText().toString();
+            Toast.makeText(MainActivity.this, Pesan, Toast.LENGTH_SHORT).show();
         });
     }
 
